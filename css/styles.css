@@ -2,3 +2,17 @@ h1 {
   color: #eb8510;
   text-transform: uppercase;
 }
+
+h2 {
+  text-transform: uppercase;
+}
+
+header,
+footer {
+  background-color: #1b203d;
+  color: #dddddd;
+}
+
+nav li {
+  display: inline;
+}
