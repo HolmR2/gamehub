@@ -1,6 +1,16 @@
+
+
+
+body {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 h1 {
   color: #eb8510;
   text-transform: uppercase;
+  font-family: "Raleway";
+
 }
 
 h2 {
@@ -13,6 +23,12 @@ footer {
   color: #dddddd;
 }
 
+header {
+  display: flex;
+}
+
 nav li {
   display: inline;
 }
+
+j
