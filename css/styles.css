@@ -1,16 +1,13 @@
-
-
-
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #606060;
+  z-index: -1;
 }
-
 
 h1 {
   color: #eb8510;
   text-transform: uppercase;
   font-family: "Raleway";
-
 }
 
 h2 {
@@ -31,4 +28,16 @@ nav li {
   display: inline;
 }
 
-j
+.game-image {
+  max-width: 279;
+  max-height: 106px;
+}
+
+.game {
+  display: grid;
+  grid-template-rows: 100px 50px 100px;
+  align-items: center;
+}
+
+.second-background {
+}
