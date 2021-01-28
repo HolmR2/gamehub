@@ -1,7 +1,8 @@
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #606060;
-  z-index: -1;
+  min-height: 100vh;
+  max-width: 1000px;
 }
 
 h1 {
@@ -26,6 +27,9 @@ header {
 
 nav li {
   display: inline;
+  text-decoration: none;
+  font-family: "Roboto";
+  padding-left: 10px;
 }
 
 .game-image {
@@ -40,4 +44,24 @@ nav li {
 }
 
 .second-background {
+}
+
+.cta {
+  background-color: #eb8510;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px 50px;
+  margin-left: auto;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 300px;
+  max-width: 1000px;
+  padding-left: ;
 }
