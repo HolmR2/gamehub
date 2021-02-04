@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gamehub | Home</title>
+    <title>Gamehub | sign-in</title>
     <meta name="description" content="The universe of games. Buy, sell and trade games" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,700;1,100&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/daf51a3e9e.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
-  <body>
+  <body class="body-login">
     <header>
       <!--Main navigation-->
-      <a href="index.html" class="logo">Gamehub</a>
+
+      <div>
+        <a href="index.html"><img src="/images/gamehub-logo.png" alt="Game Hub logo" class="logo" /></a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">games</a></li>
-          <li><a href="account.html">account</a></li>
+        <ul class="navbar">
+          <li><a href="../index.html">games</a></li>
+          <li><a href="/account/login.html">account</a></li>
           <li><a href="contact.html">contact</a></li>
+          <li>
+            <form>
+              <input type="text" name="search" placeholder="Search.." class="searchbar" />
+            </form>
+          </li>
         </ul>
       </nav>
     </header>
+    <main class="main-login">
+      <section class="login">
+        <form method="POST">
+          <div class="form-wrapper">
+            <h1>Account creation</h1>
+            <section>
+              <input type="text" placeholder="Last name" />
+              <input type="text" placeholder="First name" />
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Password" />
+              <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+              <input type="text" placeholder="Confirm password" />
+              <input type="submit" value="Sign in" class="cta" />
+            </section>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

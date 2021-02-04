@@ -46,13 +46,10 @@ footer {
 }
 
 header {
-  text-decoration: none;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
+ 
   position: fixed;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   
 }
 
@@ -68,13 +65,12 @@ header div {
 }
 
 .navbar {
-  width: 100%;
   background-color: #1b203d;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   justify-content: space-evenly;
-  z-index: 1000;
   padding: 0px 0px;
+  align-items: center;
 
 }
 
@@ -146,6 +142,7 @@ main {
   max-width: 1364px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 
 .game {
@@ -223,3 +220,4 @@ main {
   padding: 15px 0px;
   color: #ffff;
 }
+
