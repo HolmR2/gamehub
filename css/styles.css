@@ -185,6 +185,7 @@ main {
   max-width: 1364px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 250px;
   align-items: center;
 }
 
@@ -222,14 +223,17 @@ main {
 
 /*login page*/
 
-.body-login {
+.main-login {
   background-image: url(../images/ps4controller-background.jpg);
   background-size: cover;
 }
 
 
 .login {
-  margin: 250px auto;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 600px;
+ margin-top: 300px;
   background-color:  #dddddd ;
   align-items: center;
   max-width: 664px;
@@ -286,7 +290,7 @@ main {
   margin-top: 250px; 
   padding-top: 80px;
   padding-left: 100px;
-  margin-bottom: 1%;
+  margin-bottom: 10%;
 
 }
 

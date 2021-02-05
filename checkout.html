@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,700;1,100&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/daf51a3e9e.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -15,12 +17,17 @@
   <body>
     <header>
       <!--Main navigation-->
-      <a href="index.html" class="logo">Gamehub</a>
+      <div>
+        <a href="index.html"><img src="images/gamehub-logo.png" alt="Game Hub logo" class="logo" /></a>
+      </div>
       <nav>
-        <ul>
+        <ul class="navbar">
           <li><a href="index.html">games</a></li>
-          <li><a href="account.html">account</a></li>
+          <li><a href="/account/login.html">account</a></li>
           <li><a href="contact.html">contact</a></li>
+          <form>
+            <input type="text" name="search" placeholder="Search.." class="searchbar" />
+          </form>
         </ul>
       </nav>
     </header>
