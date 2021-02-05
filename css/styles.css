@@ -112,13 +112,56 @@ main {
   margin-left: auto;
   border-radius: 5px;
   text-transform: uppercase;
-}
-
-.cta-buy {
-  grid-column: 2;
-  margin-right: 5px;
   padding: 5px 30px;
 }
+
+.cta-new {
+  background-color: #eb8510;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 20px;
+  padding: 5px 9px;
+  height: 20px;
+  width: 115px;
+  overflow: hidden;
+}
+
+.cta-used {
+  background-color: #298739;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  padding: 5px 9px;
+  height: 20px;
+  width: 115px;
+  overflow: hidden;
+}
+
+.cta-trade {
+  background-color: #298739;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px 9px;
+  height: 20px;
+  width: 115px;
+  overflow: hidden;
+}
+
 
 .form-wrapper .cta {
   background-color: #eb8510;
@@ -151,6 +194,12 @@ main {
   box-shadow: 5px 5px 10px #707070;
   background-color: #ffff;
   align-items: center;
+}
+
+.game .cta {
+  grid-column: 2;
+  margin-right: 5px;
+  
 }
 
 .game h3,
@@ -220,4 +269,101 @@ main {
   padding: 15px 0px;
   color: #ffff;
 }
+
+
+/* GAME PAGE */
+
+.view-game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background-color: #dddddd;
+  padding: 20px;
+  max-width: 1364px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 250px; 
+  padding-top: 80px;
+  padding-left: 100px;
+  margin-bottom: 1%;
+
+}
+
+.game-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1/3;
+  
+
+}
+
+.game-price {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  grid-column: 4/5;
+  
+}
+
+
+.price-category {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  box-shadow: 5px 5px 10px #707070;
+  background-color: #ffff;
+  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 15px 15px;
+
+}
+
+.price-category h2,
+.price-category a {
+  grid-column: 1;
+}
+
+
+
+.price-category-trade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  box-shadow: 5px 5px 10px #707070;
+  background-color: #ffff;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 10px 15px;
+
+}
+
+.price-category-trade h3,
+.price-category-trade  a,
+.price-category-trade p {
+  grid-column: 1/3;  
+}
+
+.preview-img {
+  grid-column: 1/6; 
+  
+}
+
+.preview-img i {
+  padding-right: 100px;
+}
+
+.reviews {
+  grid-column: 1/3;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
 

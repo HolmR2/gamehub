@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,700;1,100&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/daf51a3e9e.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -15,14 +17,87 @@
   <body>
     <header>
       <!--Main navigation-->
-      <a href="index.html" class="logo">Gamehub</a>
+      <div>
+        <a href="index.html"><img src="images/gamehub-logo.png" alt="Game Hub logo" class="logo" /></a>
+      </div>
       <nav>
-        <ul>
+        <ul class="navbar">
           <li><a href="index.html">games</a></li>
-          <li><a href="account.html">account</a></li>
+          <li><a href="/account/login.html">account</a></li>
           <li><a href="contact.html">contact</a></li>
+          <form>
+            <input type="text" name="search" placeholder="Search.." class="searchbar" />
+          </form>
         </ul>
       </nav>
     </header>
+
+    <main class="view-game">
+      <section class="game-info">
+        <div>
+          <h1>lorem ipsum</h1>
+          <p>
+            ras sollicitudin, mauris eget vulputate facilisis, nulla orci rhoncus nibh, ac mattis augue lorem non justo. Proin blandit elit vitae neque aliquet tempus eget non mauris. Aliquam semper diam tortor, nec pellentesque risus lobortis a.
+            Vestibulum felis velit, molestie non lacinia at, ultricies ut velit. Aliquam dignissim mollis bibendum. Aenean ut sodales metus. Vivamus dapibus quam eu orci dictum, nec auctor odio pharetra. ras sollicitudin, mauris eget vulputate
+            facilisis, nulla orci rhoncus nibh, ac mattis augue lorem non justo. Proin blandit elit vitae neque aliquet tempus eget non mauris. Aliquam semper diam tortor, nec pellentesque risus lobortis a. Vestibulum felis velit, molestie non
+            lacinia at, ultricies ut velit. Aliquam
+          </p>
+          <p>
+            ras sollicitudin, mauris eget vulputate facilisis, nulla orci rhoncus nibh, ac mattis augue lorem non justo. Proin blandit elit vitae neque aliquet tempus eget non mauris. Aliquam semper diam tortor, nec pellentesque risus lobortis a.
+            Vestibulum felis velit, molestie non lacinia at, ultricies ut velit. Aliquam
+          </p>
+        </div>
+      </section>
+
+      <section class="game-price">
+        <div class="price-category">
+          <h2>USD 49.50</h2>
+          <p>in stock (80+)</p>
+          <a href="game.html" class="cta-new">buy new</a>
+        </div>
+        <div class="price-category">
+          <h2>USD 29.50</h2>
+          <p>in stock (80+)</p>
+          <a href="game.html" class="cta-used">buy used</a>
+        </div>
+        <div class="price-category-trade">
+          <h3>Trade for used game</h3>
+          <p>*dictum, nec auctor odio pharetra.</p>
+          <a href="game.html" class="cta-trade">trade game</a>
+        </div>
+      </section>
+
+      <section class="preview-img">
+        <i class="fas fa-image fa-9x"></i>
+        <i class="fas fa-image fa-9x"></i>
+        <i class="fas fa-image fa-9x"></i>
+        <i class="fas fa-play-circle fa-9x"></i>
+      </section>
+
+      <section class="reviews">
+        <div>
+          <h4>Great game</h4>
+          <p>Fusce et orci malesuada, interdum lectus luctus, rutrum massa. In efficitur tellus neque, ultricies accumsan elit dignissim quis. Pellentesque quis interdum ligula, ac dictum libero. Proin ut aliquet arcu, interdum aliquet urna</p>
+        </div>
+        <div>
+          <h4>Great game</h4>
+          <p>Fusce et orci malesuada, interdum lectus luctus, rutrum massa. In efficitur tellus neque, ultricies accumsan elit dignissim quis. Pellentesque quis interdum ligula, ac dictum libero. Proin ut aliquet arcu, interdum aliquet urna</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>Lorem Ipsum</p>
+        <p>Curabitur bibendum ex</p>
+        <p>Aenean volutpat</p>
+      </div>
+      <div class="footer-container">
+        <p>Lorem Ipsum</p>
+      </div>
+      <div class="footer-container">
+        <p>Follow us</p>
+        <i class="fab fa-facebook-square fa-3x"></i>
+      </div>
+    </footer>
   </body>
 </html>
