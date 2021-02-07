@@ -59,17 +59,10 @@ header div {
   justify-content: flex-start;
   display: flex;
   justify-content: space-evenly;
-  padding: 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   align-items: center;
-  display: none;
-}
-
-#hamburger:checked ~ .navbar {
   display: block;
-}
-
-#hamburger {
-  display: none;
+  text-align: center;
 }
 
 .navbar li {
@@ -78,16 +71,18 @@ header div {
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
+  margin: auto;
+  padding: 8px 0px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #dddddd;
-  padding: 1px 0px;
+ 
 }
 
 .searchbar {
-  margin-left: 230px;
+  margin:auto
   border-radius: 5%;
 }
 /*
@@ -180,6 +175,7 @@ main {
   height: 20px;
   width: 115px;
   border: 3px solid #006ce0;
+  margin-right: 15px;
 }
 
 .form-wrapper .cta {
@@ -214,7 +210,7 @@ main {
 
 .game {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   box-shadow: 5px 5px 10px #707070;
   background-color: #ffff;
   align-items: center;
@@ -496,6 +492,22 @@ main {
 /* MEDIA QUERIES */
 
 @media (min-width: 400px) {
+  .cta-preorder {
+    background-color: #006ce0;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 1px;
+    height: 20px;
+    width: 115px;
+    border: 3px solid #006ce0;
+    margin-right: 15px;
+
+  
 }
 
 @media (min-width: 600px) {
@@ -505,11 +517,11 @@ main {
 
   .navbar {
     background-color: #1b203d;
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     justify-content: space-evenly;
-    padding: 0px 0px;
-    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .navbar li {
@@ -519,13 +531,39 @@ main {
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
+    padding-bottom: 0;
+    margin: 0;
   }
 
-  nav ul li a {
-    text-decoration: none;
-    color: #dddddd;
-    padding: 1px 0px;
+  .game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 5px 5px 10px #707070;
+    background-color: #ffff;
+    align-items: center;
   }
+
+  .game .cta {
+  grid-column: 2;
+  margin-right: 15px;
+}
+
+.cta-preorder {
+  background-color: #006ce0;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px 1px;
+  height: 20px;
+  width: 115px;
+  border: 3px solid #006ce0;
+  margin-left: 37px;
+
+  
 }
 
 @media (min-width: 1000px) {
