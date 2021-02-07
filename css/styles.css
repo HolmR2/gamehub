@@ -7,6 +7,7 @@ body {
   margin: 0px;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  zoom: 0.80
   
 }
 }
@@ -30,18 +31,20 @@ footer {
   
   text-align: center;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto auto;
   position: relative;
+  overflow: hidden;
 
 
 }
 
 .footer-container {
   color: #ffff;
-  padding: 0px 250px 25px 250px;
+  padding: 0px 230px 20px 230px;
   text-align: left;
-  line-height: 15%;
   font-size: 12px;
+  overflow: hidden;
+  line-height: 100%;
   
 }
 
@@ -114,7 +117,13 @@ main {
   border-radius: 5px;
   text-transform: uppercase;
   padding: 5px 30px;
+  border: 3px solid #eb8510 ;
 }
+
+.cta:hover, .cta-new:hover, .cta-used:hover, .cta-trade:hover {
+  border: 3px solid #000000;
+}
+
 
 .cta-new {
   background-color: #eb8510;
@@ -129,7 +138,8 @@ main {
   padding: 5px 9px;
   height: 20px;
   width: 115px;
-  overflow: hidden;
+  border: 3px solid #eb8510;
+
 }
 
 .cta-used {
@@ -145,7 +155,7 @@ main {
   padding: 5px 9px;
   height: 20px;
   width: 115px;
-  overflow: hidden;
+  border: 3px solid #298739;
 }
 
 .cta-trade {
@@ -160,7 +170,7 @@ main {
   padding: 5px 9px;
   height: 20px;
   width: 115px;
-  overflow: hidden;
+  border: 3px solid #298739;
 }
 
 
@@ -174,6 +184,12 @@ main {
   text-transform: uppercase;
   cursor: pointer;
   max-width: 200px;
+  border: 3px solid #eb8510 ;
+
+}
+
+.form-wrapper .cta:hover {
+  border: 3px solid #000000;
 
 }
 
@@ -227,7 +243,9 @@ main {
 .main-login {
   background-image: url(../images/ps4controller-background.jpg) ;
   background-size: cover;
-  z-index: ;
+  max-height: 100%;
+  margin:auto;
+  
   
 }
 
@@ -274,7 +292,18 @@ main {
   text-align: center;
   background-color: #1b203d ; 
   padding: 15px 0px;
+ 
+}
+
+.member a {
   color: #ffff;
+  text-decoration: none;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.member a:hover{
+  text-decoration: underline;
 }
 
 
@@ -445,7 +474,49 @@ main {
   align-items: center;
 }
 
+/*Checkout success*/
 
+.main-checkout_success {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+margin-top: 250px;
+margin-left: auto;
+margin-right: auto;
+background: #dddddd;
+width: 50%;
+  
+}
+
+.purchase
+{
+  grid-column: 1/5;
+  grid-row: 2;
+  text-align: center;
+  padding-top: 8%;
+
+}
+
+.far {
+  color: #298739;
+}
+
+
+.return-home {
+  grid-column: 1/5;
+  grid-row: 4;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.return-home a {
+  color: #000000;
+}
+
+.return-home a:hover{
+  color: #606060;
+}
   
 
 
