@@ -82,8 +82,8 @@ nav ul li a {
 }
 
 .searchbar {
-  margin:auto
-  border-radius: 5%;
+  margin:auto;
+  border-radius: 5px;
 }
 /*
 main {
@@ -363,11 +363,11 @@ main {
 }
 
 .preview-img {
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 .preview-img i {
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 .reviews {
